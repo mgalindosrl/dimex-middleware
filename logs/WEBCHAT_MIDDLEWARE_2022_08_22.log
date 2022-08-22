@@ -1,0 +1,431 @@
+16:09:16.154 INFO  App listening on port 8443! 
+16:09:17.659 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+16:10:44.062 DEBUG switch::bodyType>member-join 
+16:10:44.064 DEBUG switch::bodyType>member-join 
+16:10:44.082 DEBUG switch::bodyType>undefined 
+16:10:44.111 DEBUG switch::bodyType>undefined 
+16:10:44.297 DEBUG switch::bodyType>undefined 
+16:10:44.317 DEBUG {"id":"654fe7df-fae2-437e-a3e4-b109b1e7df94","conversation":{"id":"373e7ea8-ff3f-4e90-bd61-cca3ce0a68cb","selfUri":"/api/v2/conversations/373e7ea8-ff3f-4e90-bd61-cca3ce0a68cb"},"sender":{"id":"02483dab-b597-4e02-a603-77f60a7e40c1"},"body":"Nuevo Crédito\r\n\r\n4","bodyType":"standard","timestamp":"2022-08-22T21:10:44.304Z","selfUri":"/api/v2/webchat/guest/conversations/373e7ea8-ff3f-4e90-bd61-cca3ce0a68cb/messages/654fe7df-fae2-437e-a3e4-b109b1e7df94"} 
+16:10:44.880 DEBUG switch::bodyType>member-leave 
+16:10:44.888 DEBUG switch::bodyType>member-join 
+16:10:44.895 DEBUG switch::bodyType>undefined 
+16:10:44.930 DEBUG switch::bodyType>undefined 
+16:10:44.962 DEBUG switch::bodyType>undefined 
+16:10:45.030 DEBUG switch::bodyType>undefined 
+16:10:45.077 DEBUG switch::bodyType>undefined 
+16:10:46.932 DEBUG switch::bodyType>member-leave 
+16:10:46.933 DEBUG switch::bodyType>member-join 
+16:10:46.952 DEBUG switch::bodyType>undefined 
+16:10:46.979 DEBUG switch::bodyType>undefined 
+16:10:57.229 DEBUG switch::bodyType>undefined 
+16:10:57.704 DEBUG switch::bodyType>undefined 
+16:11:06.258 DEBUG switch::bodyType>member-leave 
+16:11:06.261 DEBUG switch::bodyType>member-leave 
+16:11:06.302 DEBUG switch::bodyType>undefined 
+16:11:06.332 DEBUG switch::bodyType>undefined 
+16:11:51.460 DEBUG switch::bodyType>undefined 
+16:11:51.479 DEBUG switch::bodyType>member-join 
+16:11:51.483 DEBUG switch::bodyType>member-join 
+16:11:51.532 DEBUG switch::bodyType>undefined 
+16:11:51.641 DEBUG {"id":"26c85eab-d2ed-4780-85eb-405d177d28c4","conversation":{"id":"47c12018-58fb-432b-8b54-a21183e8da0f","selfUri":"/api/v2/conversations/47c12018-58fb-432b-8b54-a21183e8da0f"},"sender":{"id":"c39efb78-b03e-4bcb-8433-0191e058bcb9"},"body":"Dudas Cliente\r\nTengo saldo vencido y quiero pagar\r\n4","bodyType":"standard","timestamp":"2022-08-22T21:11:51.636Z","selfUri":"/api/v2/webchat/guest/conversations/47c12018-58fb-432b-8b54-a21183e8da0f/messages/26c85eab-d2ed-4780-85eb-405d177d28c4"} 
+16:11:51.748 DEBUG switch::bodyType>undefined 
+16:11:52.477 DEBUG switch::bodyType>member-leave 
+16:11:52.480 DEBUG switch::bodyType>member-join 
+16:11:52.501 DEBUG switch::bodyType>undefined 
+16:11:52.539 DEBUG switch::bodyType>undefined 
+16:11:52.565 DEBUG switch::bodyType>undefined 
+16:11:52.745 DEBUG switch::bodyType>undefined 
+16:11:52.767 DEBUG switch::bodyType>undefined 
+16:11:56.007 DEBUG switch::bodyType>member-leave 
+16:11:56.008 DEBUG switch::bodyType>member-join 
+16:11:56.132 DEBUG switch::bodyType>undefined 
+16:11:56.146 DEBUG switch::bodyType>undefined 
+16:12:01.931 DEBUG switch::bodyType>undefined 
+16:13:27.938 DEBUG switch::bodyType>member-leave 
+16:13:27.949 DEBUG switch::bodyType>member-leave 
+16:13:27.983 DEBUG switch::bodyType>undefined 
+16:13:28.012 DEBUG switch::bodyType>undefined 
+16:21:21.676 INFO  App listening on port 8443! 
+16:21:23.067 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+16:21:30.584 DEBUG switch::bodyType>member-join 
+16:21:30.585 DEBUG switch::bodyType>member-join 
+16:21:30.595 DEBUG switch::bodyType>undefined 
+16:21:30.634 DEBUG switch::bodyType>undefined 
+16:21:30.780 DEBUG {"id":"bc1cf0b1-05da-4109-a03a-4ef9e30f8aee","conversation":{"id":"07d52e46-e356-4cdf-bc23-076e6272462d","selfUri":"/api/v2/conversations/07d52e46-e356-4cdf-bc23-076e6272462d"},"sender":{"id":"dbb6ef98-e7d8-4fe9-97d0-43e1966ffd7c"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T21:21:30.779Z","selfUri":"/api/v2/webchat/guest/conversations/07d52e46-e356-4cdf-bc23-076e6272462d/messages/bc1cf0b1-05da-4109-a03a-4ef9e30f8aee"} 
+16:21:30.804 DEBUG switch::bodyType>undefined 
+16:21:31.318 DEBUG switch::bodyType>member-leave 
+16:21:31.322 DEBUG switch::bodyType>member-join 
+16:21:31.359 DEBUG switch::bodyType>undefined 
+16:21:31.411 DEBUG switch::bodyType>undefined 
+16:21:31.442 DEBUG switch::bodyType>undefined 
+16:21:31.511 DEBUG switch::bodyType>undefined 
+16:21:31.540 DEBUG switch::bodyType>undefined 
+16:21:34.058 DEBUG switch::bodyType>member-leave 
+16:21:34.059 DEBUG switch::bodyType>member-join 
+16:21:34.089 DEBUG switch::bodyType>undefined 
+16:21:34.112 DEBUG switch::bodyType>undefined 
+16:21:37.345 DEBUG switch::bodyType>member-leave 
+16:21:37.346 DEBUG switch::bodyType>member-leave 
+16:21:37.376 DEBUG switch::bodyType>undefined 
+16:21:37.405 DEBUG switch::bodyType>undefined 
+16:22:48.162 INFO  App listening on port 8443! 
+16:22:49.755 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+16:22:58.239 DEBUG switch::bodyType>member-join 
+16:22:58.240 DEBUG switch::bodyType>member-join 
+16:22:58.254 DEBUG switch::bodyType>undefined 
+16:22:58.308 DEBUG switch::bodyType>undefined 
+16:22:58.447 DEBUG {"id":"58061928-9501-45c1-b1db-14a4294f9e53","conversation":{"id":"4cd4717a-7b99-4bd8-b134-bfeef4b03188","selfUri":"/api/v2/conversations/4cd4717a-7b99-4bd8-b134-bfeef4b03188"},"sender":{"id":"8cbe60e5-9bdd-489a-9631-cd45d1004b52"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T21:22:58.449Z","selfUri":"/api/v2/webchat/guest/conversations/4cd4717a-7b99-4bd8-b134-bfeef4b03188/messages/58061928-9501-45c1-b1db-14a4294f9e53"} 
+16:22:58.481 DEBUG switch::bodyType>undefined 
+16:22:58.913 DEBUG switch::bodyType>member-leave 
+16:22:58.915 DEBUG switch::bodyType>member-join 
+16:22:58.948 DEBUG switch::bodyType>undefined 
+16:22:58.985 DEBUG switch::bodyType>undefined 
+16:22:59.009 DEBUG switch::bodyType>undefined 
+16:22:59.081 DEBUG switch::bodyType>undefined 
+16:22:59.109 DEBUG switch::bodyType>undefined 
+16:23:00.960 DEBUG switch::bodyType>member-leave 
+16:23:00.962 DEBUG switch::bodyType>member-join 
+16:23:01.001 DEBUG switch::bodyType>undefined 
+16:23:01.031 DEBUG switch::bodyType>undefined 
+16:23:04.178 DEBUG switch::bodyType>undefined 
+16:23:04.979 DEBUG switch::bodyType>undefined 
+16:23:59.332 DEBUG switch::bodyType>member-leave 
+16:23:59.339 DEBUG switch::bodyType>member-leave 
+16:23:59.365 DEBUG switch::bodyType>undefined 
+16:23:59.387 DEBUG switch::bodyType>undefined 
+16:24:57.837 INFO  App listening on port 8443! 
+16:24:59.634 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+16:25:26.276 INFO  App listening on port 8443! 
+16:25:28.012 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+16:25:33.424 DEBUG switch::bodyType>member-join 
+16:25:33.425 DEBUG switch::bodyType>member-join 
+16:25:33.438 DEBUG switch::bodyType>undefined 
+16:25:33.467 DEBUG switch::bodyType>undefined 
+16:25:33.615 DEBUG {"id":"2ad70b05-0324-421e-a76a-c5b43aebe8f3","conversation":{"id":"64090cb5-5edd-4737-a827-7f0b36b3bc9a","selfUri":"/api/v2/conversations/64090cb5-5edd-4737-a827-7f0b36b3bc9a"},"sender":{"id":"be0c1873-fdb6-4a09-a09b-95faab5437ce"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T21:25:33.618Z","selfUri":"/api/v2/webchat/guest/conversations/64090cb5-5edd-4737-a827-7f0b36b3bc9a/messages/2ad70b05-0324-421e-a76a-c5b43aebe8f3"} 
+16:25:33.659 DEBUG switch::bodyType>undefined 
+16:25:34.286 DEBUG switch::bodyType>member-leave 
+16:25:34.288 DEBUG switch::bodyType>member-join 
+16:25:34.407 DEBUG switch::bodyType>undefined 
+16:25:34.420 DEBUG switch::bodyType>undefined 
+16:25:34.421 DEBUG switch::bodyType>undefined 
+16:25:34.464 DEBUG switch::bodyType>undefined 
+16:25:34.495 DEBUG switch::bodyType>undefined 
+16:25:37.699 DEBUG switch::bodyType>member-leave 
+16:25:37.703 DEBUG switch::bodyType>member-join 
+16:25:37.753 DEBUG switch::bodyType>undefined 
+16:25:37.756 DEBUG switch::bodyType>undefined 
+16:25:41.685 DEBUG switch::bodyType>member-leave 
+16:25:41.689 DEBUG switch::bodyType>member-leave 
+16:25:41.697 DEBUG switch::bodyType>undefined 
+16:25:41.722 DEBUG switch::bodyType>undefined 
+16:26:20.432 INFO  App listening on port 8443! 
+16:26:21.915 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+16:26:56.802 DEBUG switch::bodyType>member-join 
+16:26:56.804 DEBUG switch::bodyType>member-join 
+16:26:56.820 DEBUG switch::bodyType>undefined 
+16:26:56.852 DEBUG switch::bodyType>undefined 
+16:26:56.988 DEBUG {"id":"5c696766-8e82-4140-8b0a-b6ea8084ccc2","conversation":{"id":"831277a7-f45e-4f9c-8faa-df7546ecbe3f","selfUri":"/api/v2/conversations/831277a7-f45e-4f9c-8faa-df7546ecbe3f"},"sender":{"id":"62908518-c100-4363-a5b2-8c3827b3fda8"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T21:26:56.990Z","selfUri":"/api/v2/webchat/guest/conversations/831277a7-f45e-4f9c-8faa-df7546ecbe3f/messages/5c696766-8e82-4140-8b0a-b6ea8084ccc2"} 
+16:26:57.013 DEBUG switch::bodyType>undefined 
+16:26:57.450 DEBUG switch::bodyType>member-leave 
+16:26:57.452 DEBUG switch::bodyType>member-join 
+16:26:57.483 DEBUG switch::bodyType>undefined 
+16:26:57.519 DEBUG switch::bodyType>undefined 
+16:26:57.546 DEBUG switch::bodyType>undefined 
+16:26:57.610 DEBUG switch::bodyType>undefined 
+16:26:57.652 DEBUG switch::bodyType>undefined 
+16:26:59.690 DEBUG switch::bodyType>undefined 
+16:26:59.708 DEBUG switch::bodyType>member-leave 
+16:26:59.718 DEBUG switch::bodyType>member-join 
+16:26:59.723 DEBUG switch::bodyType>undefined 
+16:27:01.717 DEBUG switch::bodyType>member-leave 
+16:27:01.718 DEBUG switch::bodyType>member-leave 
+16:27:01.739 DEBUG switch::bodyType>undefined 
+16:27:01.780 DEBUG switch::bodyType>undefined 
+16:31:37.882 INFO  App listening on port 8443! 
+16:31:39.511 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+16:32:08.616 INFO  App listening on port 8443! 
+16:32:10.453 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+16:32:13.295 DEBUG switch::bodyType>member-join 
+16:32:13.296 DEBUG switch::bodyType>member-join 
+16:32:13.321 DEBUG switch::bodyType>undefined 
+16:32:13.364 DEBUG switch::bodyType>undefined 
+16:32:13.490 DEBUG {"id":"556e90b1-2298-4d26-b72d-38503e144987","conversation":{"id":"8638cfad-b155-4133-a191-a38974f596b9","selfUri":"/api/v2/conversations/8638cfad-b155-4133-a191-a38974f596b9"},"sender":{"id":"e81a21ff-f549-4142-87e7-164e5ff64917"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T21:32:13.497Z","selfUri":"/api/v2/webchat/guest/conversations/8638cfad-b155-4133-a191-a38974f596b9/messages/556e90b1-2298-4d26-b72d-38503e144987"} 
+16:32:13.556 DEBUG switch::bodyType>undefined 
+16:32:14.036 DEBUG switch::bodyType>member-leave 
+16:32:14.037 DEBUG switch::bodyType>member-join 
+16:32:14.124 DEBUG switch::bodyType>undefined 
+16:32:14.156 DEBUG switch::bodyType>undefined 
+16:32:14.182 DEBUG switch::bodyType>undefined 
+16:32:14.328 DEBUG switch::bodyType>undefined 
+16:32:14.379 DEBUG switch::bodyType>undefined 
+16:32:16.631 DEBUG switch::bodyType>member-leave 
+16:32:16.632 DEBUG switch::bodyType>member-join 
+16:32:16.675 DEBUG switch::bodyType>undefined 
+16:32:16.757 DEBUG switch::bodyType>undefined 
+16:32:36.281 DEBUG switch::bodyType>undefined 
+16:35:47.506 INFO  App listening on port 8443! 
+16:35:48.993 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+16:35:55.073 DEBUG switch::bodyType>undefined 
+16:40:04.948 ERROR Cannot read properties of null (reading 'conversationEnd')
+{}
+TypeError: Cannot read properties of null (reading 'conversationEnd')
+    at C:\Users\MarcoGalindo\desktop\webchat_middleware\services\genesys.js:572:37
+    at Array.forEach (<anonymous>)
+    at C:\Users\MarcoGalindo\desktop\webchat_middleware\services\genesys.js:571:48
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+16:47:42.263 DEBUG switch::bodyType>member-leave 
+16:47:42.272 DEBUG switch::bodyType>member-leave 
+16:47:42.341 DEBUG switch::bodyType>undefined 
+16:47:42.373 DEBUG switch::bodyType>undefined 
+17:10:50.951 INFO  App listening on port 8443! 
+17:10:52.428 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:12:47.192 INFO  App listening on port 8443! 
+17:12:48.646 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:12:53.358 DEBUG switch::bodyType>member-join 
+17:12:53.359 DEBUG switch::bodyType>member-join 
+17:12:53.364 DEBUG switch::bodyType>undefined 
+17:12:53.393 DEBUG switch::bodyType>undefined 
+17:12:53.513 DEBUG switch::bodyType>undefined 
+17:12:53.565 DEBUG {"id":"ed5f5fe3-01db-4b54-b7e6-be2aaba676bd","conversation":{"id":"da6afb25-5162-4e34-8082-e97772b27a3a","selfUri":"/api/v2/conversations/da6afb25-5162-4e34-8082-e97772b27a3a"},"sender":{"id":"76a8ca4c-0050-4adf-9d4f-22c22696a3af"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T22:12:53.587Z","selfUri":"/api/v2/webchat/guest/conversations/da6afb25-5162-4e34-8082-e97772b27a3a/messages/ed5f5fe3-01db-4b54-b7e6-be2aaba676bd"} 
+17:12:54.099 DEBUG switch::bodyType>member-leave 
+17:12:54.104 DEBUG switch::bodyType>member-join 
+17:12:54.129 DEBUG switch::bodyType>undefined 
+17:12:54.160 DEBUG switch::bodyType>undefined 
+17:12:54.183 DEBUG switch::bodyType>undefined 
+17:12:54.270 DEBUG switch::bodyType>undefined 
+17:12:58.354 DEBUG switch::bodyType>undefined 
+17:12:59.715 DEBUG switch::bodyType>member-leave 
+17:12:59.716 DEBUG switch::bodyType>member-join 
+17:12:59.730 DEBUG switch::bodyType>undefined 
+17:12:59.755 DEBUG switch::bodyType>undefined 
+17:13:10.449 DEBUG switch::bodyType>undefined 
+17:13:25.589 DEBUG switch::bodyType>member-leave 
+17:13:25.590 DEBUG switch::bodyType>member-leave 
+17:13:25.628 DEBUG switch::bodyType>undefined 
+17:13:25.655 DEBUG switch::bodyType>undefined 
+17:18:43.460 INFO  App listening on port 8443! 
+17:18:44.991 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:18:50.734 DEBUG switch::bodyType>member-join 
+17:18:50.735 DEBUG switch::bodyType>member-join 
+17:18:50.746 DEBUG switch::bodyType>undefined 
+17:18:50.786 DEBUG switch::bodyType>undefined 
+17:18:50.936 DEBUG {"id":"a45ef0ed-9b53-411a-b7a6-4137b16ef287","conversation":{"id":"81fdca25-b273-45fb-b06c-acabf8b4b981","selfUri":"/api/v2/conversations/81fdca25-b273-45fb-b06c-acabf8b4b981"},"sender":{"id":"08b67bf4-08ca-48e1-b9ec-47f7b523187c"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T22:18:50.954Z","selfUri":"/api/v2/webchat/guest/conversations/81fdca25-b273-45fb-b06c-acabf8b4b981/messages/a45ef0ed-9b53-411a-b7a6-4137b16ef287"} 
+17:18:51.071 DEBUG switch::bodyType>undefined 
+17:18:51.476 DEBUG switch::bodyType>member-leave 
+17:18:51.480 DEBUG switch::bodyType>member-join 
+17:18:51.510 DEBUG switch::bodyType>undefined 
+17:18:51.551 DEBUG switch::bodyType>undefined 
+17:18:51.579 DEBUG switch::bodyType>undefined 
+17:18:51.639 DEBUG switch::bodyType>undefined 
+17:18:51.679 DEBUG switch::bodyType>undefined 
+17:18:54.108 DEBUG switch::bodyType>member-leave 
+17:18:54.110 DEBUG switch::bodyType>member-join 
+17:18:54.133 DEBUG switch::bodyType>undefined 
+17:18:54.161 DEBUG switch::bodyType>undefined 
+17:19:01.406 DEBUG switch::bodyType>undefined 
+17:19:34.470 INFO  App listening on port 8443! 
+17:19:36.040 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:19:36.677 DEBUG switch::bodyType>member-leave 
+17:19:36.678 DEBUG switch::bodyType>member-leave 
+17:19:36.701 DEBUG switch::bodyType>undefined 
+17:19:36.721 DEBUG switch::bodyType>undefined 
+17:19:53.805 DEBUG switch::bodyType>member-join 
+17:19:53.809 DEBUG switch::bodyType>member-join 
+17:19:53.828 DEBUG switch::bodyType>undefined 
+17:19:53.863 DEBUG switch::bodyType>undefined 
+17:19:53.994 DEBUG switch::bodyType>undefined 
+17:19:54.007 DEBUG {"id":"e747516d-267f-472d-81e0-a0c0d0185f52","conversation":{"id":"0ce7efa1-b70d-448e-b2bc-8f51fa1946bf","selfUri":"/api/v2/conversations/0ce7efa1-b70d-448e-b2bc-8f51fa1946bf"},"sender":{"id":"a6aec5df-acb3-45f8-8e9a-1c0fa2e7b1d2"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T22:19:54.029Z","selfUri":"/api/v2/webchat/guest/conversations/0ce7efa1-b70d-448e-b2bc-8f51fa1946bf/messages/e747516d-267f-472d-81e0-a0c0d0185f52"} 
+17:19:54.405 DEBUG switch::bodyType>member-leave 
+17:19:54.406 DEBUG switch::bodyType>member-join 
+17:19:54.439 DEBUG switch::bodyType>undefined 
+17:19:54.477 DEBUG switch::bodyType>undefined 
+17:19:54.496 DEBUG switch::bodyType>undefined 
+17:19:54.567 DEBUG switch::bodyType>undefined 
+17:19:54.675 DEBUG switch::bodyType>undefined 
+17:19:56.383 DEBUG switch::bodyType>member-leave 
+17:19:56.384 DEBUG switch::bodyType>member-join 
+17:19:56.417 DEBUG switch::bodyType>undefined 
+17:19:56.447 DEBUG switch::bodyType>undefined 
+17:19:59.823 DEBUG switch::bodyType>undefined 
+17:20:16.182 INFO  App listening on port 8443! 
+17:20:17.520 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:20:19.730 DEBUG switch::bodyType>member-leave 
+17:20:19.731 DEBUG switch::bodyType>member-leave 
+17:20:19.765 DEBUG switch::bodyType>undefined 
+17:20:19.791 DEBUG switch::bodyType>undefined 
+17:20:30.091 DEBUG switch::bodyType>member-join 
+17:20:30.092 DEBUG switch::bodyType>member-join 
+17:20:30.115 DEBUG switch::bodyType>undefined 
+17:20:30.144 DEBUG switch::bodyType>undefined 
+17:20:30.277 DEBUG {"id":"c8e10dbe-7dad-462b-9f00-166dc6945bba","conversation":{"id":"dfaeb04f-99be-49b2-be39-900301afcf27","selfUri":"/api/v2/conversations/dfaeb04f-99be-49b2-be39-900301afcf27"},"sender":{"id":"9c4a224e-8554-4048-adc4-1c58ba71a854"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T22:20:30.298Z","selfUri":"/api/v2/webchat/guest/conversations/dfaeb04f-99be-49b2-be39-900301afcf27/messages/c8e10dbe-7dad-462b-9f00-166dc6945bba"} 
+17:20:30.352 DEBUG switch::bodyType>undefined 
+17:20:30.743 DEBUG switch::bodyType>member-leave 
+17:20:30.744 DEBUG switch::bodyType>member-join 
+17:20:30.791 DEBUG switch::bodyType>undefined 
+17:20:30.880 DEBUG switch::bodyType>undefined 
+17:20:30.917 DEBUG switch::bodyType>undefined 
+17:20:30.940 DEBUG switch::bodyType>undefined 
+17:20:31.039 DEBUG switch::bodyType>undefined 
+17:20:32.946 DEBUG switch::bodyType>member-leave 
+17:20:32.948 DEBUG switch::bodyType>member-join 
+17:20:32.952 DEBUG switch::bodyType>undefined 
+17:20:32.953 DEBUG switch::bodyType>undefined 
+17:20:37.226 DEBUG switch::bodyType>undefined 
+17:21:03.253 INFO  App listening on port 8443! 
+17:21:04.884 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:21:06.566 DEBUG switch::bodyType>member-leave 
+17:21:06.569 DEBUG switch::bodyType>member-leave 
+17:21:06.607 DEBUG switch::bodyType>undefined 
+17:21:06.632 DEBUG switch::bodyType>undefined 
+17:21:23.453 DEBUG switch::bodyType>member-join 
+17:21:23.456 DEBUG switch::bodyType>member-join 
+17:21:23.481 DEBUG switch::bodyType>undefined 
+17:21:23.509 DEBUG switch::bodyType>undefined 
+17:21:23.663 DEBUG {"id":"ff1f0673-8b0c-48ac-adb8-c55ca8b689c6","conversation":{"id":"554ae1b2-7dc0-4bdd-a6fa-871f5148a548","selfUri":"/api/v2/conversations/554ae1b2-7dc0-4bdd-a6fa-871f5148a548"},"sender":{"id":"bc6dac18-8807-4cbc-92eb-c097752517e7"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T22:21:23.680Z","selfUri":"/api/v2/webchat/guest/conversations/554ae1b2-7dc0-4bdd-a6fa-871f5148a548/messages/ff1f0673-8b0c-48ac-adb8-c55ca8b689c6"} 
+17:21:23.698 DEBUG switch::bodyType>undefined 
+17:21:24.049 DEBUG switch::bodyType>member-leave 
+17:21:24.050 DEBUG switch::bodyType>member-join 
+17:21:24.191 DEBUG switch::bodyType>undefined 
+17:21:24.219 DEBUG switch::bodyType>undefined 
+17:21:24.247 DEBUG switch::bodyType>undefined 
+17:21:24.277 DEBUG switch::bodyType>undefined 
+17:21:24.363 DEBUG switch::bodyType>undefined 
+17:21:25.937 DEBUG switch::bodyType>member-leave 
+17:21:25.939 DEBUG switch::bodyType>member-join 
+17:21:25.964 DEBUG switch::bodyType>undefined 
+17:21:25.993 DEBUG switch::bodyType>undefined 
+17:21:37.418 DEBUG switch::bodyType>undefined 
+17:26:24.029 INFO  App listening on port 8443! 
+17:26:25.552 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:26:27.451 DEBUG switch::bodyType>undefined 
+17:27:29.316 INFO  App listening on port 8443! 
+17:27:30.892 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:27:36.407 DEBUG switch::bodyType>undefined 
+17:28:04.968 INFO  App listening on port 8443! 
+17:28:06.653 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:28:09.979 DEBUG switch::bodyType>undefined 
+17:29:39.862 INFO  App listening on port 8443! 
+17:29:41.305 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:29:43.756 DEBUG switch::bodyType>undefined 
+17:29:44.000 ERROR Cannot read properties of undefined (reading '0')
+{}
+TypeError: Cannot read properties of undefined (reading '0')
+    at C:\Users\MarcoGalindo\desktop\webchat_middleware\services\genesys.js:444:40
+    at new Promise (<anonymous>)
+    at getSenderId (C:\Users\MarcoGalindo\desktop\webchat_middleware\services\genesys.js:434:12)
+    at WebSocket.<anonymous> (C:\Users\MarcoGalindo\desktop\webchat_middleware\services\genesys.js:250:33)
+    at WebSocket.emit (node:events:513:28)
+    at Receiver.receiverOnMessage (C:\Users\MarcoGalindo\desktop\webchat_middleware\node_modules\ws\lib\websocket.js:1178:20)
+    at Receiver.emit (node:events:513:28)
+    at Receiver.dataMessage (C:\Users\MarcoGalindo\desktop\webchat_middleware\node_modules\ws\lib\receiver.js:528:14)
+    at C:\Users\MarcoGalindo\desktop\webchat_middleware\node_modules\ws\lib\receiver.js:479:23
+    at C:\Users\MarcoGalindo\desktop\webchat_middleware\node_modules\ws\lib\permessage-deflate.js:308:9 
+17:30:38.567 INFO  App listening on port 8443! 
+17:30:40.049 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:30:57.738 DEBUG switch::bodyType>undefined 
+17:31:23.363 INFO  App listening on port 8443! 
+17:31:24.823 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:31:26.753 DEBUG switch::bodyType>undefined 
+17:33:10.227 INFO  App listening on port 8443! 
+17:33:11.830 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:33:15.049 DEBUG switch::bodyType>undefined 
+17:33:33.690 INFO  App listening on port 8443! 
+17:33:35.385 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:33:39.444 DEBUG switch::bodyType>undefined 
+17:33:55.616 INFO  App listening on port 8443! 
+17:33:57.047 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:34:01.120 DEBUG switch::bodyType>undefined 
+17:34:54.845 INFO  App listening on port 8443! 
+17:34:56.406 DEBUG switch::bodyType>undefined 
+17:34:56.414 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:36:50.037 INFO  App listening on port 8443! 
+17:36:51.538 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:36:52.363 DEBUG switch::bodyType>member-leave 
+17:36:52.374 DEBUG switch::bodyType>member-leave 
+17:38:03.722 INFO  App listening on port 8443! 
+17:38:05.362 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:38:30.783 DEBUG switch::bodyType>member-join 
+17:38:30.784 DEBUG switch::bodyType>member-join 
+17:38:30.807 DEBUG switch::bodyType>undefined 
+17:38:30.853 DEBUG switch::bodyType>undefined 
+17:38:30.981 DEBUG {"id":"4b430f86-e243-479c-a7ea-3d807fc6cfe4","conversation":{"id":"9d643918-865d-4ce4-9efa-e0d7a9ac6db4","selfUri":"/api/v2/conversations/9d643918-865d-4ce4-9efa-e0d7a9ac6db4"},"sender":{"id":"de67c5df-9fd5-4fb0-8126-2919dffcfaf1"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T22:38:31.008Z","selfUri":"/api/v2/webchat/guest/conversations/9d643918-865d-4ce4-9efa-e0d7a9ac6db4/messages/4b430f86-e243-479c-a7ea-3d807fc6cfe4"} 
+17:38:31.014 DEBUG switch::bodyType>undefined 
+17:38:31.470 DEBUG switch::bodyType>undefined 
+17:38:31.481 DEBUG switch::bodyType>member-leave 
+17:38:31.482 DEBUG switch::bodyType>member-join 
+17:38:31.506 DEBUG switch::bodyType>undefined 
+17:38:31.538 DEBUG switch::bodyType>undefined 
+17:38:31.618 DEBUG switch::bodyType>undefined 
+17:38:31.657 DEBUG switch::bodyType>undefined 
+17:38:32.859 DEBUG switch::bodyType>member-leave 
+17:38:32.861 DEBUG switch::bodyType>member-join 
+17:38:32.910 DEBUG switch::bodyType>undefined 
+17:38:32.935 DEBUG switch::bodyType>undefined 
+17:38:35.585 DEBUG switch::bodyType>undefined 
+17:38:42.730 DEBUG switch::bodyType>member-leave 
+17:38:42.733 DEBUG switch::bodyType>member-leave 
+17:38:42.760 DEBUG switch::bodyType>undefined 
+17:38:42.834 DEBUG switch::bodyType>undefined 
+17:39:53.290 INFO  App listening on port 8443! 
+17:39:54.835 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:40:00.555 DEBUG switch::bodyType>member-join 
+17:40:00.556 DEBUG switch::bodyType>member-join 
+17:40:00.579 DEBUG switch::bodyType>undefined 
+17:40:00.613 DEBUG switch::bodyType>undefined 
+17:40:00.745 DEBUG switch::bodyType>undefined 
+17:40:00.763 DEBUG {"id":"db831639-bd50-44c1-a853-a385056de79f","conversation":{"id":"977ad49d-0f96-43ab-8ac6-af002201a4ba","selfUri":"/api/v2/conversations/977ad49d-0f96-43ab-8ac6-af002201a4ba"},"sender":{"id":"e82aa605-54b0-4da3-9d1d-d277f433a6b7"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nPrimer mensaje","bodyType":"standard","timestamp":"2022-08-22T22:40:00.770Z","selfUri":"/api/v2/webchat/guest/conversations/977ad49d-0f96-43ab-8ac6-af002201a4ba/messages/db831639-bd50-44c1-a853-a385056de79f"} 
+17:40:01.675 DEBUG switch::bodyType>member-leave 
+17:40:01.677 DEBUG switch::bodyType>member-join 
+17:40:01.749 DEBUG switch::bodyType>undefined 
+17:40:01.786 DEBUG switch::bodyType>undefined 
+17:40:01.830 DEBUG switch::bodyType>undefined 
+17:40:01.937 DEBUG switch::bodyType>undefined 
+17:40:01.969 DEBUG switch::bodyType>undefined 
+17:40:03.781 DEBUG switch::bodyType>member-leave 
+17:40:03.782 DEBUG switch::bodyType>member-join 
+17:40:03.789 DEBUG switch::bodyType>undefined 
+17:40:03.828 DEBUG switch::bodyType>undefined 
+17:40:06.851 DEBUG switch::bodyType>undefined 
+17:40:07.714 DEBUG switch::bodyType>undefined 
+17:40:32.340 DEBUG switch::bodyType>undefined 
+17:40:33.079 DEBUG switch::bodyType>undefined 
+17:40:33.895 DEBUG switch::bodyType>undefined 
+17:40:59.916 DEBUG switch::bodyType>undefined 
+17:41:00.734 DEBUG switch::bodyType>undefined 
+17:41:01.509 DEBUG switch::bodyType>undefined 
+17:41:02.381 DEBUG switch::bodyType>undefined 
+17:41:03.218 DEBUG switch::bodyType>undefined 
+17:41:04.057 DEBUG switch::bodyType>undefined 
+17:41:25.105 INFO  App listening on port 8443! 
+17:41:26.644 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:41:36.815 DEBUG switch::bodyType>undefined 
+17:41:37.762 DEBUG switch::bodyType>undefined 
+17:41:38.482 DEBUG switch::bodyType>undefined 
+17:41:42.649 DEBUG switch::bodyType>member-leave 
+17:41:42.650 DEBUG switch::bodyType>member-leave 
+17:41:42.752 DEBUG switch::bodyType>undefined 
+17:41:42.755 DEBUG switch::bodyType>undefined 
+17:48:45.173 INFO  App listening on port 8443! 
+17:48:46.629 DEBUG {"entities":[{"id":"v2.routing.queues.b5596b74-5e75-49c0-be22-0767d0a8fbf1.conversations.chats"},{"id":"v2.routing.queues.afedb7ad-1546-4441-b037-8d523be313b8.conversations.chats"},{"id":"v2.routing.queues.c06284f5-1467-448d-80e4-e0639ddac57d.conversations.chats"}]} 
+17:49:06.172 DEBUG switch::bodyType>[object Object] 
+17:49:06.173 DEBUG switch::bodyType>[object Object] 
+17:49:06.194 DEBUG switch::bodyType>[object Object] 
+17:49:06.242 DEBUG switch::bodyType>[object Object] 
+17:49:06.364 DEBUG switch::bodyType>[object Object] 
+17:49:06.406 DEBUG {"id":"a5520a17-8aa3-4e75-be87-cecf941743c1","conversation":{"id":"0e1f3dfc-f36c-4dc2-af1d-a6b61bfdab8a","selfUri":"/api/v2/conversations/0e1f3dfc-f36c-4dc2-af1d-a6b61bfdab8a"},"sender":{"id":"551d34e5-a3b5-4c40-b335-38edaae18307"},"body":"Nuevo Crédito\r\nTengo saldo vencido y quiero pagar\r\nCuarto mensaje","bodyType":"standard","timestamp":"2022-08-22T22:49:06.432Z","selfUri":"/api/v2/webchat/guest/conversations/0e1f3dfc-f36c-4dc2-af1d-a6b61bfdab8a/messages/a5520a17-8aa3-4e75-be87-cecf941743c1"} 
+17:49:06.753 DEBUG switch::bodyType>[object Object] 
+17:49:06.755 DEBUG switch::bodyType>[object Object] 
+17:49:06.772 DEBUG switch::bodyType>[object Object] 
+17:49:06.831 DEBUG switch::bodyType>[object Object] 
+17:49:06.854 DEBUG switch::bodyType>[object Object] 
+17:49:06.935 DEBUG switch::bodyType>[object Object] 
+17:49:07.051 DEBUG switch::bodyType>[object Object] 
+17:49:09.742 DEBUG switch::bodyType>[object Object] 
+17:49:09.743 DEBUG switch::bodyType>[object Object] 
+17:49:09.761 DEBUG switch::bodyType>[object Object] 
+17:49:09.783 DEBUG switch::bodyType>[object Object] 
+17:49:12.951 DEBUG switch::bodyType>[object Object] 
+17:49:24.870 DEBUG switch::bodyType>[object Object] 
+17:49:24.871 DEBUG switch::bodyType>[object Object] 
+17:49:24.901 DEBUG switch::bodyType>[object Object] 
+17:49:24.931 DEBUG switch::bodyType>[object Object] 
