@@ -320,11 +320,12 @@ var sendMessageToCloud = (data) => {
 ///////////Nos conectamos a las notificaciones (para uso futuro)
 var Notifications = () => {
 	console.log(QUEUE_LIST);
-	logger.InfO(QUEUE_LIST);
+	logger.Info(QUEUE_LIST);
     var queues = JSON.parse(QUEUE_LIST);
     var topics = [];
 	
 	console.log(queues);
+	logger.Info(queues);
 
     for (queue of queues) {
         topics.push({"id": "v2.routing.queues." + queue.Id + ".conversations.chats" })
