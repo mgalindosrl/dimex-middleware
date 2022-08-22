@@ -323,6 +323,8 @@ var Notifications = () => {
 	logger.InfO(QUEUE_LIST);
     var queues = JSON.parse(QUEUE_LIST);
     var topics = [];
+	
+	console.log(queues);
 
     for (queue of queues) {
         topics.push({"id": "v2.routing.queues." + queue.Id + ".conversations.chats" })
