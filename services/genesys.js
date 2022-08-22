@@ -319,6 +319,8 @@ var sendMessageToCloud = (data) => {
 
 ///////////Nos conectamos a las notificaciones (para uso futuro)
 var Notifications = () => {
+	console.log(QUEUE_LIST);
+	logger.InfO(QUEUE_LIST);
     var queues = JSON.parse(QUEUE_LIST);
     var topics = [];
 
