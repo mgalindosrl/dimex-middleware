@@ -276,7 +276,7 @@ var sendMessageToOutside = (datos) => {
     return new Promise((resolve, reject) => {
         var options = {
             'method': 'POST',
-            'url': 'http://localhost:8443/api/messages/test',////'https://2155-201-141-106-147.ngrok.io/agentReply',
+            'url': 'https://dimex-api.xira.app/agentReply',
             'headers': {
                 'Content-Type': 'application/json'
             },
