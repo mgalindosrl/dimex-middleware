@@ -196,7 +196,7 @@ var openSocket = (interaction) => {
                     }
                     default:
                     {
-                        logger.Debug('switch::bodyType>' + conversationData.eventBody);
+                        logger.Debug('switch::bodyType>' + JSON.stringify(conversationData.eventBody));
                         break;
                     }
                 }
