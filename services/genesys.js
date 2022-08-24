@@ -570,9 +570,6 @@ var checkConversationState = async () => {
                 var opts = {
                     id: []
                 }
-		
-		console.log('conversaciones huerfanas');
-		console.log(JSON.stringify(result.recordsets));
 
                 result.recordsets.forEach((val, index) => {
                     opts.id.push(val[0].conversationId);
@@ -582,27 +579,16 @@ var checkConversationState = async () => {
                     .then((response) => {
                         response.conversations.forEach((val, index) => {
                             try {
-				console.log('conversationEnd');
-				console.log(JSON.stringify(val));
-				    
                                 if (val.conversationEnd) {
-                                    const requestDos = pool.request();
-                                    let resultDos = requestDos
-                                        .input('conversationId', val.conversationId)
-                                        .execute("updateDisconnectedInteraction");
-
-                                    if (resultDos !== null) {
-                                        logger.Info(resultDos);
-                                    }
+                                    disconnectOrphanInteraction(val.conversationId);
                                 }
                             } catch (e) {
                                 logger.Error(e);
                             }
-                            
-                            pool.close();
                         })
                     })
                     .catch((error) => {
+                        console.log(error);
                         logger.Error(error);
                     })
             }
@@ -611,10 +597,29 @@ var checkConversationState = async () => {
     } catch (error) {
         logger.Error(error);
         throw new Error(error);
+    } finally {
+        pool.close();
     }
 }
 
-////////Iniciamos el programa revisando la sesion en Genesys (para uso futuro)
+///Desconectamos la interaccion en bd
+var disconnectOrphanInteraction = async (conversationId) => {
+    const pool = new sql.ConnectionPool(configSql);
+
+    try {
+        await pool.connect();
+        const request = pool.request();
+        let result = await request
+            .input('conversationId', conversationId)
+            .execute("updateDisconnectedInteraction");
+    } catch (e) {
+        logger.Error(e);
+    } finally {
+        pool.close();
+    }
+}
+
+////////Iniciamos el programa revisando la sesion en Genesys
 checkGenesysSession();
 checkForOpenedInteractions();
 
