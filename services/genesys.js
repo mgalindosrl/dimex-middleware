@@ -570,6 +570,9 @@ var checkConversationState = async () => {
                 var opts = {
                     id: []
                 }
+		
+		console.log('conversaciones huerfanas');
+		console.log(JSON.stringify(result.recordsets));
 
                 result.recordsets.forEach((val, index) => {
                     opts.id.push(val[0].conversationId);
@@ -579,6 +582,9 @@ var checkConversationState = async () => {
                     .then((response) => {
                         response.conversations.forEach((val, index) => {
                             try {
+				console.log('conversationEnd');
+				console.log(JSON.stringify(val));
+				    
                                 if (val.conversationEnd) {
                                     const requestDos = pool.request();
                                     let resultDos = requestDos
