@@ -570,9 +570,11 @@ var checkConversationState = async () => {
                 var opts = {
                     id: []
                 }
+		
+		var resData = result.recordsets[0];
 
-                result.recordsets.forEach((val, index) => {
-                    opts.id.push(val[0].conversationId);
+                resData.forEach((val, index) => {
+                    opts.id.push(val.conversationId);
                 })
 
                 analyticsApi.getAnalyticsConversationsDetails(opts)
