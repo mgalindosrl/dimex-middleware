@@ -273,6 +273,9 @@ var reOpen = (interaction) => {
 
 /////////Enviamos mensaje a la calle
 var sendMessageToOutside = (datos) => {
+    console.log('enviando mensaje a la calle');
+    console.log(datos);
+	
     return new Promise((resolve, reject) => {
         var options = {
             'method': 'POST',
@@ -354,8 +357,14 @@ var Notifications = () => {
                     
                     if(topic.eventBody.participants.length > 1)
                     {
+			console.log('eventBody');
+			console.log(topic.eventBody.participants[0]);
+			    
                         if(topic.eventBody.participants[0].state == 'disconnected')
                         {
+			    console.log('participantes');
+			    console.log(topic.eventBody.participants[0]);
+			   
                             getSenderId(topic.eventBody.id)
                                 .then((respo) => {
                                     let mensaje = {
@@ -366,9 +375,14 @@ var Notifications = () => {
 
                                     sendMessageToOutside(mensaje)
                                         .then((data) => {
+					    console.log('regresamos de enviar el mensaje');
+					    console.log('desconectando interaccion');
+					    console.log(topic.eventBody.id);
                                             updateDisconnectedInteraction(topic.eventBody.id);
                                         })
                                         .catch((err) => {
+					    console.log('ocurrio un error en el envio del mensaje');
+					    console.log(topic.eventBody.id);
 					    updateDisconnectedInteraction(topic.eventBody.id);
                                             logger.Error(err);
                                         })
