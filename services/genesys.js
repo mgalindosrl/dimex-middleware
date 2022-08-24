@@ -369,6 +369,7 @@ var Notifications = () => {
                                             updateDisconnectedInteraction(topic.eventBody.id);
                                         })
                                         .catch((err) => {
+					    updateDisconnectedInteraction(topic.eventBody.id);
                                             logger.Error(err);
                                         })
                                 })
