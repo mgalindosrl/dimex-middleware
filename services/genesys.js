@@ -78,7 +78,7 @@ var createConversation = (conversation) => {
     return new Promise((resolve, reject) => {
         let avatar = "";
 
-        if (conversation.canal == "Whatsapp") {
+        if (conversation.canal == "WhatsApp") {
             avatar = AVATAR_WHATSAPP;
         }
 
