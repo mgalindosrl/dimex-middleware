@@ -362,15 +362,23 @@ var Notifications = () => {
 			    
                         if(topic.eventBody.participants[0].state == 'disconnected')
                         {
+				var finalMessage = '';
 			    console.log('participantes');
 			    console.log(topic.eventBody.participants[0]);
-			   
+				
+				if(topic.eventBody.participants[0].disconnectType == 'timeout')
+				{
+					finalMessage = '1';
+				} else {
+					finalMessage = '2';
+				}
+				
                             getSenderId(topic.eventBody.id)
                                 .then((respo) => {
                                     let mensaje = {
                                         fin: true,
                                         senderId: respo,
-                                        message: "DISCONNECTED"
+                                        message: finalMessage
                                     }
 
                                     sendMessageToOutside(mensaje)
