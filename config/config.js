@@ -18,5 +18,6 @@ module.exports = {
     SERVER: process.env.SERVER,
     DEFAULT_QUEUE_ID: process.env.DEFAULT_QUEUE_ID,
     AVATAR_WHATSAPP: process.env.AVATAR_WHATSAPP,
-    AVATAR_FB: process.env.AVATAR_FB
+    AVATAR_FB: process.env.AVATAR_FB,
+    URL_XIRA: process.env.URL_XIRA
 }
