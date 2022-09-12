@@ -5,7 +5,8 @@ const {
     ORGANIZATION_ID,
     QUEUE_LIST,
     AVATAR_FB,
-    AVATAR_WHATSAPP
+    AVATAR_WHATSAPP,
+    URL_XIRA
 } = require('../config/config');
 
 const logger = require('./logger');
@@ -279,7 +280,7 @@ var sendMessageToOutside = (datos) => {
     return new Promise((resolve, reject) => {
         var options = {
             'method': 'POST',
-            'url': 'https://dimex-api.xira.app/agentReply',
+            'url': URL_XIRA,
             'headers': {
                 'Content-Type': 'application/json'
             },
