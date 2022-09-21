@@ -280,7 +280,7 @@ var sendMessageToOutside = (datos) => {
     return new Promise((resolve, reject) => {
         var options = {
             'method': 'POST',
-            'url': URL_XIRA,
+            'url': 'https://dimex-api.xira.app/agentReply/',
             'headers': {
                 'Content-Type': 'application/json'
             },
