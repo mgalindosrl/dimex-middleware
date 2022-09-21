@@ -294,8 +294,7 @@ var sendMessageToOutside = (datos) => {
             if (error) {
                 logger.Error(error);
                 reject();
-            } else {
-		console.log(response);
+            } else {		
                 resolve();
             }
         });
