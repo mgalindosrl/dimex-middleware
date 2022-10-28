@@ -373,9 +373,13 @@ var Notifications = () => {
 				} else {
 					finalMessage = '2';
 				}
-				
-                            getSenderId(topic.eventBody.id)
+			
+			setTimeout(()=>{
+				getSenderId(topic.eventBody.id)
                                 .then((respo) => {
+				    console.log("Este es el valor del sender id que se esta desconectando");
+				    console.log(respo);
+				    
                                     let mensaje = {
                                         fin: true,
                                         senderId: respo,
@@ -399,6 +403,8 @@ var Notifications = () => {
                                 .catch((err) => {
                                     logger.Error(err);
                                 })
+			},1000)
+                            
                         }
                     }
                 }
