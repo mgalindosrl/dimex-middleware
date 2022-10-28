@@ -377,28 +377,30 @@ var Notifications = () => {
 			setTimeout(()=>{
 				getSenderId(topic.eventBody.id)
                                 .then((respo) => {
-				    console.log("Este es el valor del sender id que se esta desconectando");
-				    console.log(respo);
-				    
-                                    let mensaje = {
-                                        fin: true,
-                                        senderId: respo,
-                                        message: finalMessage
-                                    }
+					if(respo) {
+						console.log("Este es el valor del sender id que se esta desconectando");
+					    	console.log(respo);
 
-                                    sendMessageToOutside(mensaje)
-                                        .then((data) => {
-					    console.log('regresamos de enviar el mensaje');
-					    console.log('desconectando interaccion');
-					    console.log(topic.eventBody.id);
-                                            updateDisconnectedInteraction(topic.eventBody.id);
-                                        })
-                                        .catch((err) => {
-					    console.log('ocurrio un error en el envio del mensaje');
-					    console.log(topic.eventBody.id);
-					    updateDisconnectedInteraction(topic.eventBody.id);
-                                            logger.Error(err);
-                                        })
+					    let mensaje = {
+						fin: true,
+						senderId: respo,
+						message: finalMessage
+					    }
+
+					    sendMessageToOutside(mensaje)
+						.then((data) => {
+						    console.log('regresamos de enviar el mensaje');
+						    console.log('desconectando interaccion');
+						    console.log(topic.eventBody.id);
+						    updateDisconnectedInteraction(topic.eventBody.id);
+						})
+						.catch((err) => {
+						    console.log('ocurrio un error en el envio del mensaje');
+						    console.log(topic.eventBody.id);
+						    updateDisconnectedInteraction(topic.eventBody.id);
+						    logger.Error(err);
+						})
+					}
                                 })
                                 .catch((err) => {
                                     logger.Error(err);
