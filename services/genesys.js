@@ -405,7 +405,7 @@ var Notifications = () => {
                                 .catch((err) => {
                                     logger.Error(err);
                                 })
-			},1000)
+			},3000)
                             
                         }
                     }
