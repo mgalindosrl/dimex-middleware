@@ -361,7 +361,21 @@ var Notifications = () => {
 			console.log('eventBody');
 			console.log(topic.eventBody.participants[0]);
 			    
-                        if(topic.eventBody.participants[0].state == 'disconnected')
+			let isWrapupEvent = false;
+
+                        topic.eventBody.participants.forEach((participant) => {
+                            if(participant.purpose == "agent") {
+                                if(participant.wrapup && participant.wrapup.endTime) {
+                                    isWrapupEvent = true;
+                                }
+
+                                if(participant.state == "connected" && participant.wrapupPrompt == "timeout") {
+                                    isWrapupEvent = true;
+                                }
+                            }
+                        })
+			    
+                        if(topic.eventBody.participants[0].state == 'disconnected' && !isWrapupEvent)
                         {
 				var finalMessage = '';
 			    console.log('participantes');
@@ -405,7 +419,7 @@ var Notifications = () => {
                                 .catch((err) => {
                                     logger.Error(err);
                                 })
-			},3000)
+			},100)
                             
                         }
                     }
