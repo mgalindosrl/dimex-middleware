@@ -367,19 +367,24 @@ var Notifications = () => {
                             if(participant.purpose == "agent") {
                                 if(participant.wrapup && participant.wrapup.endTime) {
                                     isWrapupEvent = true;
+					console.log("participant.wrapup && participant.wrapup.endTime");
+					console.log("isWrapupEvent" + isWrapupEvent);
                                 }
 
                                 if(participant.state == "connected" && participant.wrapupPrompt == "timeout") {
                                     isWrapupEvent = true;
+					console.log("participant.state == connected && participant.wrapupPrompt == timeout");
+					console.log("isWrapupEvent" + isWrapupEvent);
                                 }
                             }
                         })
 			    
+			console.log("estatus: " + topic.eventBody.participants[0].state);
+			    
                         if(topic.eventBody.participants[0].state == 'disconnected' && !isWrapupEvent)
                         {
 				var finalMessage = '';
-			    console.log('participantes');
-			    console.log(topic.eventBody.participants[0]);
+				
 				
 				if(topic.eventBody.participants[0].disconnectType == 'timeout')
 				{
@@ -388,7 +393,6 @@ var Notifications = () => {
 					finalMessage = '2';
 				}
 			
-			setTimeout(()=>{
 				getSenderId(topic.eventBody.id)
                                 .then((respo) => {
 					if(respo) {
@@ -419,8 +423,6 @@ var Notifications = () => {
                                 .catch((err) => {
                                     logger.Error(err);
                                 })
-			},100)
-                            
                         }
                     }
                 }
