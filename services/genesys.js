@@ -343,6 +343,8 @@ var Notifications = () => {
 
             wsn.onopen = (o) => {
                 var body = topics;
+		console.log("suscriptionId");
+		console.log(data.id);
                 notificationsApi.postNotificationsChannelSubscriptions(data.id, body)
                     .then((resp) => {
                         logger.Debug(resp);
