@@ -21,6 +21,19 @@ cron.schedule('0 2 * * *', () => {
 
 app.listen(HTTP_PORT, () => logger.Info(`App listening on port ${HTTP_PORT}!`));
 
+//////////Obtener usuario para encuesta
+app.get('/api/conversaciones/usuario/:id', (req, res) => {
+    var a = new Promise(genesys.getConversationIdXira(req.params.id));
+    a.then((response)=>{
+        console.log(response);
+        return res.status(200).json(response);
+    })
+    .catch((error)=>{
+        console.log(error);
+        return res.sendStatus(403);
+    })
+})
+
 //////////Escuchamos mensajes entrantes
 app.post('/api/messages/inbound', genesys.inboundMessage);
 
