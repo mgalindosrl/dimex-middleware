@@ -664,6 +664,9 @@ var getConversationIdXira = (xiraId) => {
                             if(val.purpose == "agent") {
                                 getUserXira(val.userId)
                                     .then((userResponse) => {
+					console.log("************ USER RESPONSE************");
+					console.log(JSON.stringify(userResponse);
+						    
                                         let user = {
                                             "nombre": userResponse.name,
                                             "genesysConversationId": result.recordset[0].conversationId
@@ -672,6 +675,8 @@ var getConversationIdXira = (xiraId) => {
                                         resolve(user);
                                     })
                                     .catch((userError) => {
+					    console.log("*********** ERROR USER RESPONSE ***********");
+					    console.log(JSON.stringify(userError));
                                         reject();
                                     })
                             } else {
