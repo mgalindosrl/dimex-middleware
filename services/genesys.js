@@ -643,7 +643,7 @@ var getConversationXira = (conversationId) => {
 var getConversationIdXira = (xiraId) => {
 	console.log("*****************XIRAID***************** " + xiraId);
     return new Promise((resolve, reject) => {
-        sql.connect(config).then(pool => {
+        sql.connect(configSql).then(pool => {
             return pool.request()
                 .input('idUsuario', xiraId)
                 .execute('SP_GET_USER_SURVEY')
