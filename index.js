@@ -23,7 +23,9 @@ app.listen(HTTP_PORT, () => logger.Info(`App listening on port ${HTTP_PORT}!`));
 
 //////////Obtener usuario para encuesta
 app.get('/api/conversaciones/usuario/:id', (req, res) => {
-    var a = new Promise(genesys.getConversationIdXira(req.params.id));
+    var a = new Promise((resolve, reject)=>{
+        resolve(genesys.getConversationIdXira(req.params.id));
+    });
     a.then((response)=>{
         console.log(response);
         return res.status(200).json(response);
