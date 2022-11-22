@@ -634,6 +634,8 @@ var getConversationXira = (conversationId) => {
                 resolve(response);
             })
             .catch((error) => {
+		console.log("*****************ERROR GETCONVERSATIONXIRA*******************");
+		console.log(error);
                 reject();
             })
     })
@@ -654,6 +656,7 @@ var getConversationIdXira = (xiraId) => {
 		
                 getConversationXira(result.recordset[0].conversationId)
                     .then((response) => {
+			console.log("*********** GETCONVERSATIONXIRALASTRESPONSE ***************);
                         response.participants.forEach((val) => {
                             if(val.purpose == "agent") {
                                 getUserXira(val.userId)
