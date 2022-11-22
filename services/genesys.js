@@ -665,7 +665,7 @@ var getConversationIdXira = (xiraId) => {
                                 getUserXira(val.userId)
                                     .then((userResponse) => {
 					console.log("************ USER RESPONSE************");
-					console.log(JSON.stringify(userResponse);
+					console.log(JSON.stringify(userResponse));
 						    
                                         let user = {
                                             "nombre": userResponse.name,
