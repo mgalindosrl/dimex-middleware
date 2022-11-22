@@ -609,9 +609,12 @@ var checkForOpenedInteractions = async () => {
 
 ////Obtener usuario
 var getUserXira = (userId) => {
+	console.log("***************** GET USER XIRA ****************" + userId);
     return new Promise((resolve, reject) => {
         usersApi.getUser(userId)
             .then((response) => {
+		console.log("***************** GET USER XIRA RESPONSE ****************");
+		console.log(JSON.stringify(response));
                 resolve(response);
             })
             .catch((error) => {
@@ -622,9 +625,12 @@ var getUserXira = (userId) => {
 
 ////Get conversation xira
 var getConversationXira = (conversationId) => {
+	console.log("******************getConversationXira************** " + conversationId);
     return new Promise((resolve, reject) => {
         conversationsApi.getConversation(conversationId)
             .then((response) => {
+		console.log("******************getConversationXira RESPONSE************** ");
+		console.log(JSON.stringify(response));
                 resolve(response);
             })
             .catch((error) => {
@@ -635,6 +641,7 @@ var getConversationXira = (conversationId) => {
 
 ////////Regresa el id de conversacion para la encuesta
 var getConversationIdXira = (xiraId) => {
+	console.log("*****************XIRAID***************** " + xiraId);
     return new Promise((resolve, reject) => {
         sql.connect(config).then(pool => {
             return pool.request()
@@ -642,6 +649,9 @@ var getConversationIdXira = (xiraId) => {
                 .execute('SP_GET_USER_SURVEY')
         })
             .then(result => {
+		console.log("*********RESULTADO CONSULTA BD XIRA******");
+		console.log(JSON.stringify(result));
+		
                 getConversationXira(result.recordset[0].conversationId)
                     .then((response) => {
                         response.participants.forEach((val) => {
