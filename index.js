@@ -29,6 +29,7 @@ app.get('/api/conversaciones/usuario/:id', (req, res) => {
             res.status(200).json(response);
         })
         .catch((error)=>{
+            console.log(error);
             console.log("*******************ERROR NUEVA API*********************");
             res.sendStatus(403);
         })
