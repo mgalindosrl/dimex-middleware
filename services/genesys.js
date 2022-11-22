@@ -21,6 +21,8 @@ let client = platformClient.ApiClient.instance;
 let webChatApi = new platformChatClient.WebChatApi();
 let notificationsApi = new platformClient.NotificationsApi();
 let analyticsApi = new platformClient.AnalyticsApi();
+let conversationsApi = new platformClient.ConversationsApi();
+let usersApi = new platformClient.UsersApi();
 
 var token;
 var queue;
@@ -554,7 +556,8 @@ var checkGenesysSession = () => {
                 conversationsApi = new platformClient.ConversationsApi();
                 externalContactsApi = new platformClient.ExternalContactsApi();
                 analyticsApi = new platformClient.AnalyticsApi();
-
+		usersApi = new platformClient.UsersApi();
+		
                 Notifications();
             })
             .catch((error) => {
@@ -609,7 +612,7 @@ var checkForOpenedInteractions = async () => {
 
 ////Obtener usuario
 var getUserXira = (userId) => {
-	console.log("***************** GET USER XIRA ****************" + userId);
+	console.log("***************** GET USER XIRA **************** " + userId);
     return new Promise((resolve, reject) => {
         usersApi.getUser(userId)
             .then((response) => {
