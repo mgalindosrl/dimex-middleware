@@ -23,17 +23,15 @@ app.listen(HTTP_PORT, () => logger.Info(`App listening on port ${HTTP_PORT}!`));
 
 //////////Obtener usuario para encuesta
 app.get('/api/conversaciones/usuario/:id', (req, res) => {
-    var a = new Promise((resolve, reject)=>{
-        resolve(genesys.getConversationIdXira(req.params.id));
-    });
-    a.then((response)=>{
-        console.log(response);
-        return res.status(200).json(response);
-    })
-    .catch((error)=>{
-        console.log(error);
-        return res.sendStatus(403);
-    })
+    genesys.getConversationIdXira(req.params.id)
+        .then((response)=>{
+            console.log("************************NUEVA API*******************");
+            res.status(200).json(response);
+        })
+        .catch((error)=>{
+            console.log(*******************ERROR NUEVA API*********************);
+            res.sendStatus(403);
+        })
 })
 
 //////////Escuchamos mensajes entrantes
