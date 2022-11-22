@@ -607,27 +607,65 @@ var checkForOpenedInteractions = async () => {
     }
 }
 
+////Obtener usuario
+var getUserXira = (userId) => {
+    return new Promise((resolve, reject) => {
+        usersApi.getUser(userId)
+            .then((response) => {
+                resolve(response);
+            })
+            .catch((error) => {
+                reject();
+            })
+    })
+}
+
+////Get conversation xira
+var getConversationXira = (conversationId) => {
+    return new Promise((resolve, reject) => {
+        conversationsApi.getConversation(conversationId)
+            .then((response) => {
+                resolve(response);
+            })
+            .catch((error) => {
+                reject();
+            })
+    })
+}
+
 ////////Regresa el id de conversacion para la encuesta
-var getConversationIdXira = async (xiraId) => {
-    const pool = new sql.ConnectionPool(configSql);
-    try {
-        await pool.connect();
-        const request = pool.request();
-        let result = await request
-		.input('idUsuario', xiraId)
-            .execute('SP_GET_USER_SURVEY');
-        if (result !== null) {
-            if (result.rowsAffected[0] > 0) {
-                return result.recordset[0].conversationId;
-            }
-        }
-        return null;
-    } catch (error) {
-        logger.Error(error);
-        throw new Error(error);
-    } finally {
-        pool.close();
-    }
+var getConversationIdXira = (xiraId) => {
+    return new Promise((resolve, reject) => {
+        sql.connect(config).then(pool => {
+            return pool.request()
+                .input('idUsuario', xiraId)
+                .execute('SP_GET_USER_SURVEY')
+        })
+            .then(result => {
+                getConversationXira(result.recordset[0].conversationId)
+                    .then((response) => {
+                        response.participants.forEach((val) => {
+                            if(val.purpose == "agent") {
+                                getUserXira(val.userId)
+                                    .then((userResponse) => {
+                                        var user = {
+                                            "nombre": userResponse.name,
+                                            "genesysConversationId": result.recordset[0].conversationId
+                                        }
+
+                                        resolve(user);
+                                    })
+                                    .catch((userError) => {
+                                        reject();
+                                    })
+                            }
+                        })
+                    })
+            })
+            .catch(err => {
+                reject(err);
+            });
+    })
 }
 
 /////Check for conversation state in db
