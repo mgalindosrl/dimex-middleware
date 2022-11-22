@@ -607,6 +607,29 @@ var checkForOpenedInteractions = async () => {
     }
 }
 
+////////Regresa el id de conversacion para la encuesta
+var getConversationIdXira = async (xiraId) => {
+    const pool = new sql.ConnectionPool(configSql);
+    try {
+        await pool.connect();
+        const request = pool.request();
+        let result = await request
+		.input('idUsuario', xiraId)
+            .execute('SP_GET_USER_SURVEY');
+        if (result !== null) {
+            if (result.rowsAffected[0] > 0) {
+                return result.recordset[0].conversationId;
+            }
+        }
+        return null;
+    } catch (error) {
+        logger.Error(error);
+        throw new Error(error);
+    } finally {
+        pool.close();
+    }
+}
+
 /////Check for conversation state in db
 var checkConversationState = async () => {
     const pool = new sql.ConnectionPool(configSql);
@@ -678,5 +701,6 @@ checkForOpenedInteractions();
 module.exports = {
     inboundMessage: inboundMessage,
     updateGenesysSession: updateGenesysSession,
-    checkConversationState: checkConversationState
+    checkConversationState: checkConversationState,
+getConversationIdXira: getConversationIdXira
 }
