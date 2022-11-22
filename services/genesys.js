@@ -617,7 +617,7 @@ var getUserXira = (userId) => {
         usersApi.getUser(userId)
             .then((response) => {
 		console.log("***************** GET USER XIRA RESPONSE ****************");
-		console.log(JSON.stringify(response));
+		console.log(response);
                 resolve(response);
             })
             .catch((error) => {
@@ -660,6 +660,7 @@ var getConversationIdXira = (xiraId) => {
                 getConversationXira(result.recordset[0].conversationId)
                     .then((response) => {
 			console.log("*********** GETCONVERSATIONXIRALASTRESPONSE ***************");
+			console.log(JSON.stringify(response));
                         response.participants.forEach((val) => {
                             if(val.purpose == "agent") {
                                 getUserXira(val.userId)
@@ -671,7 +672,8 @@ var getConversationIdXira = (xiraId) => {
                                             "nombre": userResponse.name,
                                             "genesysConversationId": result.recordset[0].conversationId
                                         }
-
+					console.log("RESPUESTA FINAL");
+					console.log(user);
                                         resolve(user);
                                     })
                                     .catch((userError) => {
