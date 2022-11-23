@@ -612,15 +612,16 @@ var checkForOpenedInteractions = async () => {
 
 ////Obtener usuario
 var getUserXira = (userId) => {
-	console.log("***************** GET USER XIRA **************** " + userId);
     return new Promise((resolve, reject) => {
+        console.log("***************** GET USER XIRA **************** " + userId);
         usersApi.getUser(userId)
             .then((response) => {
-		console.log("***************** GET USER XIRA RESPONSE ****************");
-		console.log(response);
+		        console.log("***************** GET USER XIRA RESPONSE ****************");
+		        console.log(response);
                 resolve(response);
             })
             .catch((error) => {
+                console.log(error);
                 reject();
             })
     })
@@ -632,7 +633,7 @@ var getConversationXira = (conversationId) => {
     return new Promise((resolve, reject) => {
         conversationsApi.getConversation(conversationId)
             .then((response) => {
-		console.log("******************getConversationXira RESPONSE************** ");
+		console.log("******************getConversationXira RESPONSE**************");
 		console.log(JSON.stringify(response));
                 resolve(response);
             })
@@ -644,53 +645,64 @@ var getConversationXira = (conversationId) => {
     })
 }
 
-////////Regresa el id de conversacion para la encuesta
-var getConversationIdXira = (xiraId) => {
-	console.log("*****************XIRAID***************** " + xiraId);
+var getDataXira = (xiraId) => {
     return new Promise((resolve, reject) => {
         sql.connect(configSql).then(pool => {
             return pool.request()
                 .input('idUsuario', xiraId)
                 .execute('SP_GET_USER_SURVEY')
         })
-            .then(result => {
-		console.log("*********RESULTADO CONSULTA BD XIRA******");
-		console.log(JSON.stringify(result));
+        .then(result => {
+            resolve(result.recordset[0].conversationId);
+        })
+        .catch(err => {
+            console.log(err);
+            reject(err);
+        })
+    })
+}
+
+////////Regresa el id de conversacion para la encuesta
+var getConversationIdXira = (req, res) => {
+	console.log("*****************XIRAID***************** " + req.params.id);
+    getDataXira(req.params.id)
+        .then(result => {
+		    console.log("*********RESULTADO CONSULTA BD XIRA******");
+		    console.log(JSON.stringify(result));
 		
-                getConversationXira(result.recordset[0].conversationId)
-                    .then((response) => {
-			console.log("*********** GETCONVERSATIONXIRALASTRESPONSE ***************");
-			console.log(JSON.stringify(response));
-                        response.participants.forEach((val) => {
-                            if(val.purpose == "agent") {
-                                getUserXira(val.userId)
-                                    .then((userResponse) => {
-					console.log("************ USER RESPONSE************");
-					console.log(JSON.stringify(userResponse));
+            getConversationXira(result)
+                .then((response) => {
+			        console.log("*********** GETCONVERSATIONXIRALASTRESPONSE ***************");
+			        console.log(JSON.stringify(response));
+                    response.participants.forEach((val) => {
+                        if(val.purpose == "agent") {
+                            getUserXira(val.userId)
+                                .then((userResponse) => {
+                                    console.log("************ USER RESPONSE ************");
+                                    console.log(userResponse);
 						    
-                                        let user = {
-                                            "nombre": userResponse.name,
-                                            "genesysConversationId": result.recordset[0].conversationId
-                                        }
-					console.log("RESPUESTA FINAL");
-					console.log(user);
-                                        resolve(user);
-                                    })
-                                    .catch((userError) => {
-					    console.log("*********** ERROR USER RESPONSE ***********");
-					    console.log(JSON.stringify(userError));
-                                        reject();
-                                    })
-                            } else {
-			    	reject();
-			    }
+                                    let user = {
+                                        "nombre": userResponse.name,
+                                        "genesysConversationId": result
+                                    }
+                                        console.log("RESPUESTA FINAL");
+                                        console.log(user);
+                                        res.status(200).json(user);
+                                })
+                                .catch((userError) => {
+                                    console.log("*********** ERROR USER RESPONSE ***********");
+                                    console.log(userError);
+                                    res.sendStatus(404);
+                                })
+                            }
                         })
-                    })
+                })
             })
             .catch(err => {
-                reject(err);
+                console.log(err);
+                res.sendStatus(404);
             });
-    })
+    
 }
 
 /////Check for conversation state in db
