@@ -653,7 +653,7 @@ var getDataXira = (xiraId) => {
                 .execute('SP_GET_USER_SURVEY')
         })
         .then(result => {
-            resolve(result.recordset[0].conversationId);
+            resolve(result.recordset[0]);
         })
         .catch(err => {
             console.log(err);
@@ -670,7 +670,7 @@ var getConversationIdXira = (req, res) => {
 		    console.log("*********RESULTADO CONSULTA BD XIRA******");
 		    console.log(JSON.stringify(result));
 		
-            getConversationXira(result)
+            getConversationXira(result.conversationId)
                 .then((response) => {
 			        console.log("*********** GETCONVERSATIONXIRALASTRESPONSE ***************");
 			        console.log(JSON.stringify(response));
@@ -683,7 +683,8 @@ var getConversationIdXira = (req, res) => {
 						    
                                     let user = {
                                         "nombre": userResponse.name,
-                                        "genesysConversationId": result
+                                        "genesysConversationId": result.conversationId,
+					"fecha": result.fecha
                                     }
                                         console.log("RESPUESTA FINAL");
                                         console.log(user);
