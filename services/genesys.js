@@ -580,22 +580,23 @@ var checkGenesysSession = () => {
     if (!token) {
         client.loginClientCredentialsGrant(GENESYSCLOUD_CLIENTID, GENESYSCLOUD_CLIENTSECRET)
             .then((response) => {
+                console.log(response.accessToken);
                 token = response.accessToken;
                 notificationsApi = new platformClient.NotificationsApi();
                 routingApi = new platformClient.RoutingApi();
                 conversationsApi = new platformClient.ConversationsApi();
                 externalContactsApi = new platformClient.ExternalContactsApi();
                 analyticsApi = new platformClient.AnalyticsApi();
-		usersApi = new platformClient.UsersApi();
-		
-		GetExistingChannels()
+		        usersApi = new platformClient.UsersApi();
+                
+                GetExistingChannels()
                     .then((response) => {
                         console.log(response);
                     })
                     .catch((error) => {
                         console.log(error);
                     })
-		
+
                 Notifications();
             })
             .catch((error) => {
