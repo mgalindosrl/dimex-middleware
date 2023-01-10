@@ -10,7 +10,7 @@ const {
 } = require('../config/config');
 
 const logger = require('./logger');
-const moment = require('./moment');
+const moment = require('moment');
 const platformClient = require('purecloud-platform-client-v2');
 const platformChatClient = require('purecloud-guest-chat-client');
 const configSql = require("../config/sqlConfig"); 
