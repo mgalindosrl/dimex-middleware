@@ -10,6 +10,7 @@ const {
 } = require('../config/config');
 
 const logger = require('./logger');
+const moment = require('./moment');
 const platformClient = require('purecloud-platform-client-v2');
 const platformChatClient = require('purecloud-guest-chat-client');
 const configSql = require("../config/sqlConfig"); 
@@ -466,6 +467,35 @@ var checkForActiveConversation = async (body)  => {
     }
 }
 
+var GetExistingChannels = () => {
+    return new Promise((resolve, reject) => {
+        notificationsApi.getNotificationsChannels()
+            .then(response => {
+                console.log("Response");
+                resolve(response);
+            })
+            .catch(error => {
+                reject(error);
+            })
+    })
+}
+
+var RemoveSuscriptions = (channelId) => {
+    return new Promise((resolve, reject) => {
+        console.log("eliminando channels");
+        console.log(channelId);
+        notificationsApi.deleteNotificationsChannelSubscriptions(channelId)
+            .then((response) => {
+                console.log(response);
+                resolve(response);
+            })
+            .catch((error) => {
+                console.log(error);
+                reject(error);
+            })
+    })
+}
+
 ///////Revisamos si hay una conversacion activa en SQL
 var getSenderId = async (conversationId) => {
     const pool = new sql.ConnectionPool(configSql);
@@ -558,6 +588,14 @@ var checkGenesysSession = () => {
                 analyticsApi = new platformClient.AnalyticsApi();
 		usersApi = new platformClient.UsersApi();
 		
+		GetExistingChannels()
+                    .then((response) => {
+                        console.log(response);
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    })
+		
                 Notifications();
             })
             .catch((error) => {
@@ -570,20 +608,34 @@ var checkGenesysSession = () => {
 
 //////////Renovar sesion
 var updateGenesysSession = () => {
-    client.loginClientCredentialsGrant(GENESYSCLOUD_CLIENTID, GENESYSCLOUD_CLIENTSECRET)
-        .then((response) => {
-            token = response.accessToken;
-            notificationsApi = new platformClient.NotificationsApi();
-            routingApi = new platformClient.RoutingApi();
-            conversationsApi = new platformClient.ConversationsApi();
-            externalContactsApi = new platformClient.ExternalContactsApi();
-            analyticsApi = new platformClient.AnalyticsApi();
+    GetExistingChannels()
+    .then((response1) => {
+        response1.entities.forEach(element => {
+            RemoveSuscriptions(element.id)
+                .then(response2 => {
+                    client.loginClientCredentialsGrant(GENESYSCLOUD_CLIENTID, GENESYSCLOUD_CLIENTSECRET)
+                    .then((response3) => {
+                        token = response3.accessToken;
+                        notificationsApi = new platformClient.NotificationsApi();
+                        routingApi = new platformClient.RoutingApi();
+                        conversationsApi = new platformClient.ConversationsApi();
+                        externalContactsApi = new platformClient.ExternalContactsApi();
+                        analyticsApi = new platformClient.AnalyticsApi();
 
-            Notifications();
+                        Notifications();
+                    })
+                    .catch((error) => {
+                        logger.Error(error);
+                    })                    
+                })
+                .catch(error => {
+                    console.log(error);
+                });
         })
-        .catch((error) => {
-            logger.Error(error);
-        })
+    })
+    .catch((error) => {
+        console.log(error);
+    })
 };
 
 ////////Check for open interactions to reopen sockets
